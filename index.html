@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="imagens_salvas/mercedes logo.png" type="imagens/x-icon">
+    <title> formulário </title>
+    </head>
+    <style>
+        header {
+    background-color:#050505;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px;
+    height: 80px;
+    position: static; 
+    width: 1900px;
+  }
+
+  .header img{
+    width: 70px;
+  }
+  .nav_logo{
+    width: 110px;
+    height: 20px;
+    transform: translate(-1400%);
+
+  }
+  
+  
+  nav{
+    background-color: #2c2c2c;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+    justify-items: end;
+  }
+  
+  nav li {
+    margin: 06px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 3%;
+  }
+  
+  nav a {
+    color: #ffffff;
+   text-decoration: none;
+    text-align: justify;
+    
+  }
+  
+  main {
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align:center;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+        .body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(plano\ de\ fundo.jpg);
+    background-color: black;
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3px;
+    border-radius: 15px;
+    width: 20%;
+}
+fieldset{
+    border: 3px solid rgb(7, 7, 7);
+}
+legend{
+    border: 1px solid rgb(0, 11, 23);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(4, 14, 23);
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(4, 6, 42);
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(3, 15, 29), rgb(30, 0, 25));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(10, 40, 85), rgb(31, 7, 76));
+}
+
+
+footer {
+  position:absolute;
+  bottom: 10;
+  background-color:   #2c2c2c;
+  color: #FFF;
+  width: 100%;
+  height: 100px;    
+  text-align: center;
+  line-height: 80px;
+  right: 0px;
+
+ 
+}
+h1{
+ font-size: 25px;
+  font-family: serif;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: auto;
+  padding: 1%;
+  top: 4%;
+
+}
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: medium;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+h5{
+  
+  font-size: 15px;
+  font-family: serif;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: auto;
+  top: 5%;
+ text-align: end;
+font-style: inherit;
+
+
+}
+h2{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--superman-gray);
+  text-shadow: 2px 2px 0px #000000;
+  text-align: center;
+
+}
+
+.box {
+    margin-top: 1%;
+    width: 80%;
+}
+
+:root {
+  --superman-azul: #20a9d3;
+  --superman: #1cb4da;
+  --superman-white:#ffffff;
+  --superman-gray:#9e9d9d;
+  --superman-black:#000000;
+}
+body{
+  background-color:#000000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: justify;
+}
+label{
+    color: #ccc;
+}
+
+    </style>
+<body>
+    	
+    <header class="header">
+        <h1></h1>
+        <h2></h2>
+        <h3></h3> 
+        <h4>
+        <div class="nav_logo">
+        <a href="index.html"><img src="imagens_salvas/mercedes logo.png" >
+</div> 
+
+  <nav id="header">
+    <ul>
+      <li>
+        <a href="tabela2.html">Visualizar as tabelas</a>
+      </li>
+     
+  </nav>
+
+</header>
+<main>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b> CADASTRO </b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="Idade" id="Idade" class="inputUser" required>
+                    <label for="Idade" class="labelInput">Idade</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="CPF" id="CPF" class="inputUser" required>
+                    <label for="CPF" class="labelInput">CPF</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="Estado Civil" id="Estado Civil" class="inputUser" required>
+                    <label for="Estado Civil" class="labelInput">Estado Civil</label>
+                </div>
+                <br><br>
+                
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit" >
+                
+            </fieldset>
+        </form>
+    </div>
+<br><BR><BR><BR></BR></BR></BR></BR></BR></BR></BR></BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+    <img src="imagens_salvas/carros5.jfif" alt="." height="230px"> <img src="imagens_salvas/carro1.jpg" alt="gif"  height="240" width="350"> <img src="imagens_salvas/carro2.jpg" alt="." height="240px"> <img src="imagens_salvas/carro3.jpg" height="240px" width="400">
+    <footer>
+        <p>©️ 2023 Todos os direitos reservados.</p>
+      </footer>
+    
+
+</body>
+</html>
